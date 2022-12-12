@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'SkiSite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'skis',
+        'NAME': 'skis3',
         'USER': 'postgres',
         'PASSWORD' : 'manger',
         'HOST' : 'localhost'

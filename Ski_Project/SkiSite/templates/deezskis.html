@@ -4,7 +4,17 @@
 <!-- About-->
 <div class="container">
     <div class="text-center">
-        <h2 class="section-heading text-uppercase">About</h2>
+        <h2 class="section-heading text-uppercase">Inventory Skis</h2>
+        <a class='btn btn-primary' href="{% url 'addSki' %}">Add A New Ski</a>
+    </div>
+    <div>
+        {% for ski in skis %}
+        <p>
+            <a class='btn btn-primary' href="{% url 'editSki' ski_id=ski.id %}">Edit</a>
+            {{ ski.brand }}, {{ski.model}}, {{ski.waistwidth}}, {{ski.length}}, {{ski.type}}
+            <a class='btn btn-primary' href="{% url 'deleteSki' ski_id=ski.id %}">Delete</a>
+        </p>
+        {% endfor %}
     </div>
     <ul class="timeline">
         <li>

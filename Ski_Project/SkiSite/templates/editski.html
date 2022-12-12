@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class='container'>
+    <div class='text-left'>
+        <h2 class = 'section-heading text-uppercase'>Skis</h2>
+    </div>
+    <br>
+    <form name = 'form' method = 'post' action = "{% url 'updateSki' %}">
+        {% csrf_token %}
+        <input type="hidden" id="ski_id" name="ski_id" value="{{skis.id}}">
+        <label for="brand">Brand:</label>
+        <input type="text" name="brand" id="brand" value="{{skis.brand}}">
+        <br><br>
+
+        <label for="model">Model:</label>
+        <input type="text" name="model" id="model" value="{{skis.model}}">
+        <br><br>
+        
+        <label for="waistwidth">Waistwidth:</label>
+        <input type="text" name="waistwidth" id="waistwidth" value="{{skis.waistwidth}}">
+
+        <label for="length">Length:</label>
+        <input type="text" name="length" id="length" value="{{skis.length}}">
+
+        <label for="type">Type:</label>
+        <input type="text" name="type" id="type" value="{{skis.type}}">
+
+        <br><br>
+
+        <button type="submit">Update Bro!</button>
+    </form>
+    
+{% endblock %}     

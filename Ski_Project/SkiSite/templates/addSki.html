@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class='container'>
+    <div class='text-left'>
+        <h2 class = 'section-heading text-uppercase'>Skis</h2>
+    </div>
+    <br>
+    <form name = 'form' method = 'post' action = "{% url 'addSki' %}">
+        {% csrf_token %}
+
+
+        <label for="brand">Brand:</label>
+        <input type="text" name="brand" id="brand">
+        <br><br>
+
+        <label for="model">Model:</label>
+        <input type="text" name="model" id="model">
+        <br><br>
+        
+        <label for="waistwidth">Waistwidth:</label>
+        <input type="text" name="waistwidth" id="waistwidth">
+        <br><br>
+
+        <label for="model">Type:</label>
+        <input type="text" name="type" id="type">
+        <br><br>
+
+        <label for="length">Length:</label>
+        <input type="text" name="length" id="length">
+
+        <br><br>
+
+        <button type="submit">Add Ski</button>
+    </form>
+    
+{% endblock %}     
