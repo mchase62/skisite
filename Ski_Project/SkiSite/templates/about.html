@@ -6,18 +6,25 @@
     <div class="text-center">
         <h2 class="section-heading text-uppercase">About</h2>
     </div>
-    <ul class="timeline">
-        <li>
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'img/about/42096.jpg' %}" width="600" height="600" alt="" /></div>
-
-            <div class="timeline-panel">
-                <div class="timeline-heading">
-                    <a href="https://www.freepik.com/vectors/business">Business vector created by macrovector - www.freepik.com</a>
-                    <h4 class="subheading">Traveling around the world!</h4>
-                </div>
-                <div class="timeline-body"><p class="text-muted">Let us build a memory that you will always remember.</p></div>
-            </div>
-        </li>                    
-    </ul>
+</div>
+    <div class="grid-container">
+    
+        <div class="grid-item grid-item1">
+            <p class="column-text">Skis have evoloved through the years. They started out as pieces of wood with no bases or edges. As technology has advanced skis have evolved far past what early skiers could even imagine possible. No longer do we ride skinny planks of wood with leather boots. </p>
+        </div>
+        <div class="grid-item grid-item2">
+            <img class="ski-image" src="{% static 'img/oldSkis.jpg' %} ">
+        </div>
+        <div class="grid-item grid-item3">
+            <img class="ski-image" src="{% static 'img/newSkis.jpeg' %} ">
+        </div>
+        <div class="grid-item grid-item4">
+            <p class="column-text">Now there are skis for different snow conditions, skier types, skill levels, and more. There are so many skis that it can be hard to know what skis are best for you.
+            </p>
+            <p class="column-text">This website aims to help consolidate ski specs so you can find the rights ski for you!</p>
+        </div>
+        
+    
+</div>
 </div>
 {% endblock %}

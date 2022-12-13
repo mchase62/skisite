@@ -1,0 +1,69 @@
+.bg {
+    /* The image used */
+    background-image: url("../img/skiResort.jpg") !important;
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .custom-heading{
+    font-size: 50px;
+    color: black;
+    padding: 0px;
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0.559);
+
+  }
+  .btn-color{
+    background-color: rgb(42, 70, 42);
+    border-color: rgb(42, 70, 42);
+    
+  }
+  .btn-color:hover{
+    background-color: rgb(152, 152, 152);
+    border-color: rgb(152, 152, 152);
+  }
+  .nav-color{
+    background-color: white !important;
+  }
+  .text-color{
+    color: black !important;
+    
+  }
+  .bg-color{
+    border-color: rgb(231, 231, 231) !important;
+    background-color: rgb(231, 231, 231) !important;
+  }
+
+.grid-container{
+    display:grid !important;
+    grid-template-columns: 500px 500px !important;
+    align-items: center;
+    justify-content: space-around;
+}
+/* .about-body{
+    columns: 2;
+} */
+
+.column-text{
+    font-size: 20px;
+    text-align: left;
+    
+
+}
+
+
+.ski-image{
+    width: 600px;
+    
+}
+
+.grid-item4{
+    width: 400px ;
+    
+}
